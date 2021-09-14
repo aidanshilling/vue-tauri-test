@@ -3,18 +3,14 @@
 ## Project setup
 ```
 
-WSL:
-    1. You must use something like vcXsrv to display the window.
+WSL & Linux:
+    1. (WSL Only) You must use something like vcXsrv to display the window.
     vcXsrv can be downloaded here: https://sourceforge.net/projects/vcxsrv/
-    2. run the command 'export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0' to export your display. This must be done each time you start a new session in your terminal
-    3. npm install
-    4. npm install -g @vue/cli
-    5. vue add tauri
-
-Linux & Windows: (not yet tested)
-    1. npm install
-    2. npm install -g @vue/cli
-    3. vue add tauri
+    2. (WSL Only) run the command 'export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0' to export your display. This must be done each time you start a new session in your terminal
+    3. Follow this setup guid for Tauri: https://tauri.studio/en/docs/getting-started/setup-linux
+    4. npm install
+    5. npm install -g @vue/cli
+    6. vue add tauri
 
 npm install
 ```
